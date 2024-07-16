@@ -10,7 +10,7 @@ import Link from 'next/link';
 import logo from "@/assets/logo.svg";
 import Image from 'next/image';
 import { IconButton, Stack } from '@mui/material';
-import { Facebook } from '@mui/icons-material';
+import { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material';
 
 const navItems = [
     {
@@ -70,19 +70,19 @@ const Navbar = () => {
                         }}>
 
                             <IconButton>
-                                <Facebook></Facebook>
+                                <Facebook />
                             </IconButton>
 
                             <IconButton>
-                                <Facebook></Facebook>
+                                <Twitter />
                             </IconButton>
 
                             <IconButton>
-                                <Facebook></Facebook>
+                                <Instagram />
                             </IconButton>
 
                             <IconButton>
-                                <Facebook></Facebook>
+                                < YouTube />
                             </IconButton>
 
                         </Stack>
