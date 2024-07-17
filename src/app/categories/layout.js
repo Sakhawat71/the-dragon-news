@@ -1,7 +1,8 @@
+import AllCategories from '@/components/ui/AllCategories/AllCategories';
 import { Box, Container, Grid } from '@mui/material';
 import React from 'react';
 
-const CategoriesLayout = () => {
+const CategoriesLayout = ({children}) => {
 
 
 
@@ -9,11 +10,12 @@ const CategoriesLayout = () => {
         <Box>
             <Container>
                 <Grid container spacing={2}>
+                    
                     <Grid item xs={3}>
-                        router
+                        <AllCategories />
                     </Grid>
-                    <Grid item xs={9}>
-                        news
+                    <Grid item xs={9} >
+                        {children}
                     </Grid>
                     
                 </Grid>
