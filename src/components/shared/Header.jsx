@@ -6,7 +6,6 @@ import { showCurrentDate } from "@/utils/getCurrentDate";
 const Header = () => {
 
     const currentDate = showCurrentDate()
-    // console.log(curDate);
 
     return (
         <Box className="py-10 text-center">
