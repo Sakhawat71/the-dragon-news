@@ -21,12 +21,12 @@ const NewsPages = async ({ searchParams }) => {
                             <Card>
                                 <CardActionArea>
                                     <CardMedia>
-                                        {/* <Image
-                                            src={newsImg}
+                                        <Image
+                                            src={post.thumbnail_url}
                                             width={800}
                                             height={300}
                                             alt='news thambnel'
-                                        /> */}
+                                        />
                                     </CardMedia>
 
                                     <CardContent>
