@@ -6,7 +6,7 @@ const NewsPages = async ({ searchParams }) => {
 
     // console.log(searchParams);
     const { data: news } = await getNews(searchParams.category);
-    console.log(news);
+    // console.log(news);
 
 
 
