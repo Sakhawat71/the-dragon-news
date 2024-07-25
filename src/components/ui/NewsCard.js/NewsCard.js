@@ -22,9 +22,9 @@ const NewsCard = ({news}) => {
                 </CardMedia>
 
                 <CardContent>
-                    <p className='bg-[#FF8C47] w-fit px-1 rounded-lg text-white'>
+                    <Typography className='bg-[#FF8C47] w-fit px-1 rounded-lg text-white'>
                         {news?.category}
-                    </p>
+                    </Typography>
                     <Typography gutterBottom variant="h5" component="div">
                         {news?.title.length > 50 ? news?.title.slice(0,30) + ` ...` : news?.title}
                     </Typography>

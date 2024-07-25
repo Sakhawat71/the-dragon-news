@@ -12,7 +12,7 @@ const NewsPages = async ({ searchParams }) => {
 
 
     return (
-        <div>
+        <>
 
             <Typography className='my-2'>Total <span className='font-bold'>{searchParams.category}</span> news: {news.length}</Typography>
 
@@ -38,9 +38,9 @@ const NewsPages = async ({ searchParams }) => {
                                         </CardMedia>
 
                                         <CardContent>
-                                            <p className='bg-[#F3454C] w-fit px-3 rounded-lg text-white mb-4'>
+                                            <Typography className='bg-[#F3454C] w-fit px-3 rounded-lg text-white mb-4'>
                                                 {post.category}
-                                            </p>
+                                            </Typography>
                                             <Typography gutterBottom variant="h5" component="div">
                                                 {post.title.length > 30 ? post.title.slice(0, 150) + `....` : post.title}
                                             </Typography>
@@ -60,7 +60,7 @@ const NewsPages = async ({ searchParams }) => {
                     ))
                 }
             </Grid>
-        </div>
+       </>
     );
 };
 

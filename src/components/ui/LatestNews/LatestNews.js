@@ -8,7 +8,6 @@ const LatestNews = async () => {
 
     const { data } = await getFrontPageNews();
     const latest = data[0];
-    // console.log(latest);
 
     return (
         <Grid container spacing={3} >
@@ -29,9 +28,9 @@ const LatestNews = async () => {
                         </CardMedia>
 
                         <CardContent>
-                            <p className='bg-[#FF8C47] w-fit px-1 rounded-lg text-white'>
+                            <Typography className='bg-[#FF8C47] w-fit px-1 rounded-lg text-white'>
                                 {latest?.category}
-                            </p>
+                            </Typography>
                             <Typography gutterBottom variant="h5" component="div">
                                 {latest?.title.length > 50 ? latest?.title.slice(0, 30) + ` ...` : latest?.title}
                             </Typography>
