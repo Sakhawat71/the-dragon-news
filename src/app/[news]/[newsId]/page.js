@@ -6,7 +6,6 @@ import Image from "next/image";
 const NewsDetails = async ({ params }) => {
 
     const { data: details } = await getNewsDetails(params.newsId)
-    // console.log(details);
 
     return (
         <Box>
